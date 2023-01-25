@@ -11,10 +11,19 @@ body {
 header, footer {
     background-color: brown;
     text-align: right;
-    height: 68px;
+    height: 100px;
     margin-top: -30px;
     margin-left: -8px;
     margin-right: -8px;
+    width: 100%;
+}
+
+header {
+    position: fixed;
+}
+
+main {
+    clear: both;
 }
 
 ul {
@@ -42,9 +51,10 @@ a:hover {
 /* Introduction section */
 hgroup {
     background-color: black;
-    min-height: 800px;
+    min-height: 840px;
     margin-right: -8px;
     margin-left: -8px;
+    margin-bottom: 20px;
     padding: 20px;
     text-align: center;
     padding-top: 200px;
@@ -55,12 +65,73 @@ h1 {
     font-size: 60px;
 }
 
-h2 {
+hgroup > h2 {
     margin-top: -20px;
     font-size: 36px;
     color: darkred;
 }
 
 section {
-    min-height: 800px;
+    min-height: 1200px;
+    margin-right: -8px;
+    margin-left: -8px;
 }
+
+section h2 {
+    margin-top: -40px;
+    padding-top: 80px;
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    width: 1000px;
+}
+
+body main + footer {
+    width: 1500px;
+}
+
+#projects {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h2.project-title {
+    margin-bottom: -100px;
+}
+
+#connect {
+    background-color: lightskyblue;
+}
+
+/* projects */
+figure {
+    border: 1px solid black;
+    width: 400px;
+    background-color: rgb(66, 86, 242);
+}
+
+img {
+    width: 398px;
+}
+
+figcaption {
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+}
+
+caption:hover {
+    color: gold;
+}
+a:hover {
+    border: 3px solid salmon;
+}
+
+div {
+    display: inline;
+    color: rgb(66, 86, 242);
+}
+
